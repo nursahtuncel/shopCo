@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopCo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- banner section -->
+    <div class="banner">
+      <div class="bannerContent">
+        <p class="bannerText">Sign up and get 20% off to your first order.</p>
+        <a href="#" class="bannerLink">Sign up now</a>
+      </div>
+      <i id="closeBanner" class="fa-solid fa-xmark"></i>
+    </div>
+    <!-- header -->
+    <div class="header">
+      <a href="./homePage.html" class="headerLogo">SHOP.CO</a>
+      <nav>
+        <ul class="headerUL">
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#onSale">On Sale</a></li>
+          <li><a href="#newArrivals">New Arrivals</a></li>
+          <li><a href="#brands">Brands</a></li>
+        </ul>
+      </nav>
+      <div class="headerSearchContainer">
+        <img
+          class="headerSearchIcon"
+          src="./images/icons/searchIcon.svg"
+          alt=""
+        />
+        <input
+          class="searchInput"
+          type="text"
+          placeholder="search for product.."
+        />
+      </div>
+
+      <div class="headerIcons">
+        <img src="./images/icons/basketIcon.svg" alt="" />
+        <img src="./images/icons/userIcon.svg" alt="" />
+      </div>
+    </div>
+    <!-- hero -->
+    <div class="hero">
+      <div class="heroTextContent">
+        <h1>FIND CLOTHES THAT MATCH YOUR STYLE</h1>
+        <p>
+          Browse through our diverse range of meticulously crafted garments,
+          designed to bring out your individuality and cater to your sense of
+          style.
+        </p>
+        <button>Shop Now</button>
+        <ul class="positiveResult">
+          <li>
+            <h6>200+</h6>
+            <p>International Brands</p>
+          </li>
+          <li>
+            <h6>2,000+</h6>
+            <p>High-Quality Products</p>
+          </li>
+          <li>
+            <h6>30,000+</h6>
+            <p>Happy Customers</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- brands section -->
+    <div class="brandsSection">
+      <div>
+        <img src="./images/Versace.svg" alt="Versace" />
+        <img src="./images/Zara.svg" alt="Zara" />
+        <img src="./images/Gucci.svg" alt="Gucci" />
+        <img src="./images/Prada.svg" alt="Prada" />
+        <img src="./images/Calvin.svg" alt="Calvin" />
+        <img src="./images/Versace.svg" alt="Versace" />
+        <img src="./images/Zara.svg" alt="Zara" />
+        <img src="./images/Gucci.svg" alt="Gucci" />
+        <img src="./images/Prada.svg" alt="Prada" />
+        <img src="./images/Calvin.svg" alt="Calvin" />
+      </div>
+    </div>
+    <!-- new arrivals -->
+    <div class="newArrivals"></div>
+    <!-- top selling -->
+     <hr>
+    <div class="topSelling"></div>
+    <!-- dress style -->
+    <div class="container dressStyleContainer">
+      <h2 class="dressStyleTitle">BROWSE BY dress STYLE</h2>
+      <div class="dressStyleGrid">
+        <div class="row top">
+          <img class="item item1" src="./images/image1.svg" alt="" />
+          <img class="item item2" src="./images/image4.svg" alt="" />
+        </div>
+        <div class="row bottom">
+          <img class="item item3" src="./images/image2.svg" alt="" />
+          <img class="item item4" src="./images/image3.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- slider -->
+
+   <div class="sliderWrapper">
+
+    <div class="sliderContainer">
+     
+         <div class="sliderTop container"> <h4 class="sliderTitle">OUR HAPPY CUSTOMERS</h4>
+     <div class="slidebtns">
+      <button class="prevButton"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+        <path d="M7.70406 0.454104L0.954061 7.2041C0.849182 7.30862 0.765966 7.43281 0.709186 7.56956C0.652405 7.7063 0.623175 7.85291 0.623175 8.00098C0.623175 8.14904 0.652405 8.29565 0.709186 8.4324C0.765966 8.56915 0.849182 8.69334 0.954061 8.79785L7.70406 15.5479C7.91541 15.7592 8.20205 15.8779 8.50094 15.8779C8.79982 15.8779 9.08647 15.7592 9.29781 15.5479C9.50916 15.3365 9.62789 15.0499 9.62789 14.751C9.62789 14.4521 9.50916 14.1654 9.29781 13.9541L4.46875 9.12504L18.25 9.12504C18.5484 9.12504 18.8345 9.00651 19.0455 8.79554C19.2565 8.58456 19.375 8.29841 19.375 8.00004C19.375 7.70167 19.2565 7.41552 19.0455 7.20455C18.8345 6.99357 18.5484 6.87504 18.25 6.87504L4.46875 6.87504L9.29875 2.04598C9.51009 1.83463 9.62883 1.54799 9.62883 1.2491C9.62883 0.950218 9.51009 0.663574 9.29875 0.45223C9.08741 0.240885 8.80076 0.122151 8.50187 0.122151C8.20299 0.122151 7.91634 0.240885 7.705 0.45223L7.70406 0.454104Z" fill="black"/>
+      </svg></button>
+    <button class="nextButton"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M14.2959 4.4541L21.0459 11.2041C21.1508 11.3086 21.234 11.4328 21.2908 11.5696C21.3476 11.7063 21.3768 11.8529 21.3768 12.001C21.3768 12.149 21.3476 12.2957 21.2908 12.4324C21.234 12.5691 21.1508 12.6933 21.0459 12.7979L14.2959 19.5479C14.0846 19.7592 13.7979 19.8779 13.4991 19.8779C13.2002 19.8779 12.9135 19.7592 12.7022 19.5479C12.4908 19.3365 12.3721 19.0499 12.3721 18.751C12.3721 18.4521 12.4908 18.1654 12.7022 17.9541L17.5313 13.125L3.75 13.125C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5846 2.625 12.2984 2.625 12C2.625 11.7017 2.74353 11.4155 2.95451 11.2045C3.16548 10.9936 3.45163 10.875 3.75 10.875L17.5313 10.875L12.7013 6.04598C12.4899 5.83463 12.3712 5.54799 12.3712 5.2491C12.3712 4.95022 12.4899 4.66357 12.7013 4.45223C12.9126 4.24088 13.1992 4.12215 13.4981 4.12215C13.797 4.12215 14.0837 4.24088 14.295 4.45223L14.2959 4.4541Z" fill="black"/>
+    </svg></button>
+     </div>
+    </div>
+    </div>
+ 
+   
+    <div class="slider"></div>
+   </div>
+    
+    <!-- offers -->
+    <div class="container offersContainer">
+      <div class="offerTitle">
+        STAY UPTO DATE ABOUT <br />
+        OUR LATEST OFFERS
+      </div>
+      <div class="offerInputContainer">
+        <div class="offerInput">
+          <img src="./images/message.png" alt="" />
+          <input placeholder="Enter your email" type="text" />
+        </div>
+        <button class="offerButton">Subscribe to Newsletter</button>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer ">
+      <ul class="container">
+        <li>
+          <div class="footerContent">
+            <h4 class="title">SHOP.CO</h4>
+            <p>
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
+            </p>
+         
+          <div class="sosialIcons">
+            <img class="sosialIcon " src="./images/instagram.png" alt="" />
+            <img class="sosialIcon" src="./images/Vector (2).png" alt="" />
+            <img class="sosialIcon face" src="./images/Group.png" alt="" />
+            <img class="sosialIcon " src="./images/logo-twitter 2.svg" alt="" />
+          </div> </div>
+        </li>
+        <li>
+          <h4>Company</h4>
+          <a href="">About</a>
+
+          <a href="">Features</a>
+
+          <a href="">Works</a>
+
+          <a href="">Career</a>
+        </li>
+        <li>
+          <h4>Help</h4>
+          <a href="">Customer Support</a>
+
+          <a href="">Delivery Details</a>
+
+          <a href="">Terms & Conditions</a>
+
+          <a href="">Privacy Policy</a>
+        </li>
+        <li>
+          <h4>FAQ</h4>
+          <a href=""> Account</a>
+
+          <a href="">Manage Deliveries</a>
+
+          <a href="">Orders</a>
+
+          <a href="">Payments</a>
+        </li>
+        <li>
+          <h4>Resources</h4>
+          <a href="">About</a> <a href="">Free eBooks</a>
+          <a href=""> Development Tutorial</a>
+
+          <a href="">How to - Blog</a>
+
+          <a href="">Youtube Playlist</a>
+        </li>
+      </ul><hr class="hr">
+      <div class="collaborateContainer">
+        <p class="collaborateText">This website is developed by trainees at <a href="">Archi’s Academy</a></p>
+        <p class="collaborateTitle">Collaborators</p>
+        <div class="collaboratorsImg">
+          <img src="./images/collabrators/Ellipse 3.svg" alt="">
+          <img src="./images/collabrators/Ellipse 4.svg" alt="">
+          <img src="./images/collabrators/Ellipse 5.svg" alt="">
+          <img src="./images/collabrators/Ellipse 6.svg" alt="">
+          <img src="./images/collabrators/Ellipse 7.svg" alt="">
+
+        </div>
+      </div>   
+    <div class="footerBottom">
+     <p>Shop.co © 2000-2023, All Rights Reserved</p>
+
+     <div class="footerBottomIcons">
+      <img src="./images/Badge (1).svg" alt="">
+      <img src="./images/Badge (2).svg" alt="">
+      <img src="./images/Badge (3).svg" alt="">
+      <img src="./images/Badge (4).svg" alt="">
+  
+     </div>
+    </div>
+    </footer>
+ 
+    
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

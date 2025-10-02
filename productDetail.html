@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- banner section -->
+    <div class="banner">
+      <div class="bannerContent">
+        <p class="bannerText">Sign up and get 20% off to your first order.</p>
+        <a href="#" class="bannerLink">Sign up now</a>
+      </div>
+      <i id="closeBanner" class="fa-solid fa-xmark"></i>
+    </div>
+    <!-- header -->
+    <div class="header">
+      <a href="./homePage.html" class="headerLogo">SHOP.CO</a>
+      <nav>
+        <ul class="headerUL">
+          <li>Shop</li>
+          <li>On Sale</li>
+          <li>New Arrivals</li>
+          <li>Brands</li>
+        </ul>
+      </nav>
+      <div class="headerSearchContainer">
+        <img
+          class="headerSearchIcon"
+          src="./images/icons/searchIcon.svg"
+          alt=""
+        />
+        <input
+          class="searchInput"
+          type="text"
+          placeholder="search for product.."
+        />
+      </div>
+
+      <div class="headerIcons">
+        <img src="./images/icons/basketIcon.svg" alt="" />
+        <img src="./images/icons/userIcon.svg" alt="" />
+      </div>
+    </div>
+
+    <!-- Product Detail -->
+    <hr />
+    <div id="productDetail" class="productDetail container">
+     
+        <hr />
+        <div class="productDetailButtons">
+          <div>
+            <button class="increase">+</button>
+            <button>1</button>
+            <button class="decrease">-</button>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- tabs -->
+ <div class="productDetailTabs container">
+  <button class="tab-button" data-tab="productDetails">
+<!-- product details -->
+ <p>Product Details</p>
+  </button>
+  <button class="tab-button active" data-tab="ratingReviews">Rating & Reviews</button>
+  <button class="tab-button" data-tab="faqs">FAQs</button>
+ </div>
+ <div class="productDetailTabsContent container">
+  <div id="productDetails" class="tab-content ">
+    <section id="TabProductDetails">
+      <!-- buraya resimler gelecek -->
+       <div class="ProductDetailImagesSection">
+        <img src="./images/productDetail/productDetail1.jpg" alt="">
+        <img src="./images/productDetail/productDetail2.jpg" alt="">
+        <img src="./images/productDetail/productDetail3.jpg" alt="">
+       </div>
+       <div class="topContent">
+        
+    <h4 class="compositionCare">COMPOSITION & CARE</h4>
+    <div>
+      <h4 class="bottomTitle">COMPOSITION</h4>
+      <div class="pdTopContent">
+        <div class="pdTopContentItem"> 
+          <h6 class="bottomContentTitle">OUTER SHELL</h6>
+          <p class="bottomContentText">94% polyester</p>
+          <p class="bottomContentText">6% elastane</p>
+        </div>
+        <div class="pdTopContentItem2">
+          <div class="bottomContentTitle which">Which has at least:</div>
+        <div >
+          <h6 class="bottomContentTitle">OUTER SHELL</h6>
+          <p class="bottomContentText">94% RCS-certified recycled polyester</p>
+          <p class="bottomContentText">6% RCS-certified recycled spandex</p>
+        </div>
+        </div>
+        <div>
+    <h4 class="bottomContentTitle">CERTIFIED MATERIALS</h4>
+    <h4 class="bottomContentText">RCS CERTIFIED RECYCLED POLYESTER</h4>
+    <p class="bottomContentText">Nowadays, recycled polyester is mainly made from PET plastic waste. This is a type of plastic that is widely used in a variety of items, such as plastic bottles. Using recycled materials helps limit the production of virgin polyester fiber. It is certified to the Recycled Claim Standard (RCS), which verifies the recycled content and tracks it from source to final product.</p>
+     <p class="bottomContentText">Certified by Intertek 193341</p>
+    </div>
+       </div>
+    <div class="pdBottomContent">
+      <h4 class="bottomTitle">CARE</h4>
+      <p class=" pdCare">Caring for your clothes is caring for the environment.</p>
+      <p class="pdCare">Lower temperature washes and delicate spin cycles are gentler on garment, helping to maintain the color, shape and structure of the fabric. At the same time it reduces energy consumption that is used in care processes.</p>
+    
+    </div>
+    <div class="pdIconsAndText">
+      <div>
+        <img src="./images/productDetailIcons/Group (2).png" alt=""> <span>Machine wash max. 30ºC/86ºF delicate cycle</span>
+      </div>
+      <div>
+        <img src="./images/productDetailIcons/ant-design_heat-map-outlined.png" alt=""> <span>Do not use bleach / whitener</span>
+      </div>
+      <div>
+        <img src="./images/productDetailIcons/ic_baseline-do-not-disturb.png" alt=""> <span>Iron maximum 110ºC/230ºF</span>
+      </div>
+      <div>
+        <img src="./images/productDetailIcons/material-symbols-light_iron.png" alt=""> <span>Dry clean with mineral spirits only</span>
+
+      </div>
+      <div>
+        <img src="./images/productDetailIcons/material-symbols-light_dry-cleaning-outline-sharp.png" alt=""> <span>Low temperature dryer may be used</span>
+
+      </div>
+    </div>
+      </div>
+    </div>
+     </section>
+    
+  </div>
+  <div id="ratingReviews" class="tab-content active"> 
+    <h2 class="ratingReviewsTitle"></h2>
+   <div class="ratingReviews">Reviews</div>
+   <div class="buttonContainer"></div>
+  
+  </div>
+  <div id="faqs" class="tab-content">
+  
+  </div>
+ </div>
+ <!-- you might also like -->
+ <div id="youMightAlsoLike"></div>
+
+    
+    <!-- offers -->
+    <div class="container offersContainer">
+      <div class="offerTitle">
+        STAY UPTO DATE ABOUT <br />
+        OUR LATEST OFFERS
+      </div>
+      <div class="offerInputContainer">
+        <div class="offerInput">
+          <img src="./images/message.png" alt="" />
+          <input placeholder="Enter your email" type="text" />
+        </div>
+        <button class="offerButton">Subscribe to Newsletter</button>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <ul class="container">
+        <li>
+          <div class="footerContent">
+            <h4 class="title">SHOP.CO</h4>
+            <p>
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
+            </p>
+
+            <div class="sosialIcons">
+              <img class="sosialIcon" src="./images/instagram.png" alt="" />
+              <img class="sosialIcon" src="./images/Vector (2).png" alt="" />
+              <img class="sosialIcon face" src="./images/Group.png" alt="" />
+              <img
+                class="sosialIcon"
+                src="./images/logo-twitter 2.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </li>
+        <li>
+          <h4>Company</h4>
+          <a href="">About</a>
+
+          <a href="">Features</a>
+
+          <a href="">Works</a>
+
+          <a href="">Career</a>
+        </li>
+        <li>
+          <h4>Help</h4>
+          <a href="">Customer Support</a>
+
+          <a href="">Delivery Details</a>
+
+          <a href="">Terms & Conditions</a>
+
+          <a href="">Privacy Policy</a>
+        </li>
+        <li>
+          <h4>FAQ</h4>
+          <a href=""> Account</a>
+
+          <a href="">Manage Deliveries</a>
+
+          <a href="">Orders</a>
+
+          <a href="">Payments</a>
+        </li>
+        <li>
+          <h4>Resources</h4>
+          <a href="">About</a> <a href="">Free eBooks</a>
+          <a href=""> Development Tutorial</a>
+
+          <a href="">How to - Blog</a>
+
+          <a href="">Youtube Playlist</a>
+        </li>
+      </ul>
+      <hr class="hr" />
+      <div class="collaborateContainer">
+        <p class="collaborateText">
+          This website is developed by trainees at
+          <a href="">Archi’s Academy</a>
+        </p>
+        <p class="collaborateTitle">Collaborators</p>
+        <div class="collaboratorsImg">
+          <img src="./images/collabrators/Ellipse 3.svg" alt="" />
+          <img src="./images/collabrators/Ellipse 4.svg" alt="" />
+          <img src="./images/collabrators/Ellipse 5.svg" alt="" />
+          <img src="./images/collabrators/Ellipse 6.svg" alt="" />
+          <img src="./images/collabrators/Ellipse 7.svg" alt="" />
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+
+        <div class="footerBottomIcons">
+          <img src="./images/Badge (1).svg" alt="" />
+          <img src="./images/Badge (2).svg" alt="" />
+          <img src="./images/Badge (3).svg" alt="" />
+          <img src="./images/Badge (4).svg" alt="" />
+        </div>
+      </div>
+    </footer>
+    
+    <script type="module" src="./js/main.js">
+
+
+    </script>
+  </body>
+</html>

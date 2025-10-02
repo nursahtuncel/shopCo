@@ -1,0 +1,116 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Emily Johnson",
+      "rating": 5,
+      "comment": "The product exceeded my expectations. The material feels premium, the design is elegant, and the packaging was very professional. Delivery was faster than I thought, and I’ll definitely purchase again."
+    },
+    {
+      "id": 2,
+      "name": "Michael Smith",
+      "rating": 4,
+      "comment": "Overall, a very good product. It matches the description perfectly and feels durable. The only reason I gave it 4 stars is because the instructions could have been a little clearer for setup."
+    },
+    {
+      "id": 3,
+      "name": "Sophia Martinez",
+      "rating": 3,
+      "comment": "The item is okay but not exactly what I was expecting. The color looks slightly different compared to the photos online, and the texture feels a bit rough. It’s usable, but I wouldn’t call it great."
+    },
+    {
+      "id": 4,
+      "name": "James Anderson",
+      "rating": 5,
+      "comment": "Absolutely fantastic experience! The seller was responsive, the delivery was quick, and the quality of the product is top-notch. I’ve already recommended it to several friends."
+    },
+    {
+      "id": 5,
+      "name": "Olivia Brown",
+      "rating": 2,
+      "comment": "I was quite disappointed with this purchase. The product did not match the description, and it felt cheaply made. I had to return it, which was a hassle, although customer service was polite."
+    },
+    {
+      "id": 6,
+      "name": "William Thompson",
+      "rating": 4,
+      "comment": "Good value for the price. It’s not perfect, but it performs well enough for daily use. I appreciate the simple design, but I hope they improve the durability in future versions."
+    },
+    {
+      "id": 7,
+      "name": "Isabella Garcia",
+      "rating": 5,
+      "comment": "I am really happy with this product. It looks even better in real life than in the pictures. The packaging was secure, and it arrived without any damage. Definitely worth every penny."
+    },
+    {
+      "id": 8,
+      "name": "Daniel Wilson",
+      "rating": 3,
+      "comment": "The product works fine, but there are some minor issues with the finish. It’s a bit overpriced for what it offers, but still acceptable if you don’t mind small imperfections."
+    },
+    {
+      "id": 9,
+      "name": "Ava Taylor",
+      "rating": 4,
+      "comment": "Pretty solid purchase overall. I like the functionality and the style. The shipping took a little longer than expected, but once it arrived, everything was in perfect condition."
+    },
+    {
+      "id": 10,
+      "name": "Liam White",
+      "rating": 5,
+      "comment": "This is one of the best purchases I’ve made online. The quality is excellent, and it feels very durable. Customer support was also very helpful when I had a small question."
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "question": "Kargo ne kadar sürede gelir?",
+      "answer": "Siparişleriniz 1-3 iş günü içinde kargoya verilir, teslimat bölgenize göre 2-5 iş günü sürebilir."
+    },
+    {
+      "id": 2,
+      "question": "İade süresi ne kadar?",
+      "answer": "Ürünlerinizi teslim aldıktan sonra 14 gün içerisinde koşulsuz iade edebilirsiniz."
+    },
+    {
+      "id": 3,
+      "question": "Ödeme yöntemleri nelerdir?",
+      "answer": "Kredi kartı, banka kartı, kapıda ödeme ve havale/EFT yöntemlerini kullanabilirsiniz."
+    },
+    {
+      "id": 4,
+      "question": "Ürünleri mağazadan teslim alabilir miyim?",
+      "answer": "Evet, sipariş sırasında 'Mağazadan Teslim Al' seçeneğini seçebilirsiniz."
+    },
+    {
+      "id": 5,
+      "question": "Ürünleriniz garantili mi?",
+      "answer": "Evet, tüm ürünlerimiz üretici garantisi kapsamındadır. Garanti süresi ürün türüne göre değişebilir."
+    },
+    {
+      "id": 6,
+      "question": "Kargo ücreti ne kadar?",
+      "answer": "150₺ üzeri siparişlerde kargo ücretsizdir. Altındaki siparişlerde kargo ücreti sabit 29₺'dir."
+    },
+    {
+      "id": 7,
+      "question": "Siparişimi nasıl takip edebilirim?",
+      "answer": "Hesabınıza giriş yaparak 'Siparişlerim' bölümünden kargo takip numaranızı görebilirsiniz."
+    },
+    {
+      "id": 8,
+      "question": "Ürün stokta yoksa ne yapabilirim?",
+      "answer": "Stokta olmayan ürünler için 'Stok Gelince Haber Ver' seçeneğini kullanabilirsiniz."
+    },
+    {
+      "id": 9,
+      "question": "Hediye paketi yapıyor musunuz?",
+      "answer": "Evet, sipariş sırasında 'Hediye Paketi' seçeneğini işaretleyerek ürününüzü paketletebilirsiniz."
+    },
+    {
+      "id": 10,
+      "question": "Müşteri hizmetlerine nasıl ulaşabilirim?",
+      "answer": "7/24 destek hattımızdan veya info@siteadi.com e-posta adresimizden bize ulaşabilirsiniz."
+    }
+  ]
+}

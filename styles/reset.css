@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+body {
+    font-family: 'Satoshi';
+    line-height: 1.5;
+    color: #333;
+}
