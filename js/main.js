@@ -1,11 +1,13 @@
 import { fetchProducts } from "./fetch.js";
 import { fetchReviews,fetchFaqs } from "./fetch.js";
 import { uiElements } from "./ui.js";
-import { renderProducts, renderRewiews,renderProductDetail ,renderTabReviews,renderTabFaqs  } from "./render.js";
+import { renderProducts, renderRewiews,renderProductDetail ,renderTabReviews,renderTabFaqs,renderCart   } from "./render.js";
 import { slider } from "./slider.js";
-import {  tabClickHandler } from "./helper.js";
+import {  tabClickHandler} from "./helper.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
+  
+
   uiElements.closeBanner.addEventListener("click", () => {
     uiElements.banner.style.display = "none";
     uiElements.SosialIcons.forEach(element => {
@@ -19,7 +21,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (
     window.location.pathname === "/" ||
     window.location.pathname === "/homePage.html"
-  ) {
+  ) {  
+    
+ 
 
     renderProducts(products,uiElements.newArrivals,"New Arrivals",4);
     renderProducts(products, uiElements.topSelling, "Top Selling",8);
@@ -30,6 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   } else if (window.location.pathname === "/categoryPage.html") {
   
   } else if (window.location.pathname === "/cart.html") {
+    renderCart();
     
   } else if (window.location.pathname === "/productDetail.html") { 
     

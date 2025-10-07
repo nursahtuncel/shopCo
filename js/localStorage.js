@@ -1,7 +1,8 @@
+import { renderCart } from "./render.js";
 
 const cart  =[];
 export { cart };
-const saveToStorage = (key, data) => {
+const updateCart = (key, data) => {
     localStorage.setItem(key, JSON.stringify(data));
   };
   
@@ -9,10 +10,19 @@ const saveToStorage = (key, data) => {
     const data = localStorage.getItem(key);
     return data ? JSON.parse(data) : null;
   };
-  
-  const removeFromStorage = (key) => {
-    localStorage.removeItem(key);
-  };
+
+const removeFromStorage = (key, productId) => {
+  let data = JSON.parse(localStorage.getItem(key)) || [];
+
+  if (!Array.isArray(data)) return; // eğer veri dizi değilse çık
+
+  // productId’si eşleşmeyenleri koru
+  data = data.filter(item => item.id !== productId);
+
+  // güncel sepeti kaydet
+  localStorage.setItem(key, JSON.stringify(data));
+};
+
   
   const addProductToCart = (product) => {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -23,17 +33,20 @@ const saveToStorage = (key, data) => {
   
     if (existingProduct) {
       existingProduct.quantity = Number(product.quantity);
+      existingProduct.size = product.size;
+      existingProduct.color = product.color;
     } else {
       cart.push(product);
     }
   
-    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCart("cart", cart);
   };
   
   const removeFromCart = (productId) => {
     let cart = getFromStorage("cart") || [];
-    cart = cart.filter(item => item.id !== productId);
-    saveToStorage("cart", cart);
+    cart = cart.filter(item => item.id !== Number(productId)); 
+    updateCart("cart", cart);
+    renderCart(); 
   };
   
 
@@ -43,11 +56,11 @@ const saveToStorage = (key, data) => {
   };
   
   const clearCart = () => {
-    saveToStorage("cart", []);
+    updateCart("cart", []);
   };
   
   export {
-    saveToStorage,
+    updateCart,
     getFromStorage,
     removeFromStorage,
     addProductToCart,

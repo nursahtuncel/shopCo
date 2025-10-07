@@ -20,8 +20,10 @@ const uiElements = {
     faqs: document.querySelector("#faqs"),
     ratingReviews: document.querySelector(".ratingReviews"),
     ratingReviewsTitle: document.querySelector(".ratingReviewsTitle"),
-    buttonContainer: document.querySelector(".buttonContainer")
-    
+    buttonContainer: document.querySelector(".buttonContainer"),
+    cartContainer: document.querySelector("#cartContainer"),
+    cartContainerRight: document.querySelector(".cartContainerRight"),
+    cartContainerLeft: document.querySelector(".cartContainerLeft")
   };
   
   export { uiElements };
