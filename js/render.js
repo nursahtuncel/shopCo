@@ -405,6 +405,88 @@ const renderCart = () => {
     });
   });
 };
+// Örnek ürünler
+const products = [];
+for (let i = 1; i <= 20; i++) {
+  products.push("Product " + i);
+}
+
+const renderPagination = (products) => {
+  const productsPerPage = 5;
+  let currentPage = 1;
+  const totalPages = Math.ceil(products.length / productsPerPage);
+
+  const showProducts = () => {
+    uiElements.productList.innerHTML = "";
+    const start = (currentPage - 1) * productsPerPage;
+    const end = start + productsPerPage;
+
+    for (let i = start; i < end && i < products.length; i++) {
+      const product = products[i];
+      const div = document.createElement("div");
+      div.innerHTML = `
+      <div class="card-container-item" data-id="${product.id}">
+        <img src="${product.image}" alt="${product.title}">
+        <div class="itemContent">
+          <h3>${getShortParagraph(product.title)}</h3>
+          <p>$${product.price}</p>
+          <span class="star">${getStars(product.rating.rate)}</span>
+        </div>
+      </div>
+      `;
+      uiElements.productList.appendChild(div);
+    }
+  };
+
+  const updatePagination = () => {
+    uiElements.paginationContainer.innerHTML = "";
+
+    // Previous Button
+    const prevButton = document.createElement("button");
+    prevButton.textContent = "Previous";
+    prevButton.disabled = currentPage === 1;
+    prevButton.addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage--;
+        showProducts();
+        updatePagination();
+      }
+    });
+    uiElements.paginationContainer.appendChild(prevButton);
+
+    // Page Numbers
+    for (let i = 1; i <= totalPages; i++) {
+      const pageButton = document.createElement("button");
+      pageButton.textContent = i;
+      pageButton.classList.add("pageNumber");
+      if (i === currentPage) pageButton.classList.add("active");
+      pageButton.addEventListener("click", () => {
+        currentPage = i;
+        showProducts();
+        updatePagination();
+      });
+      uiElements.paginationContainer.appendChild(pageButton);
+    }
+
+    // Next Button
+    const nextButton = document.createElement("button");
+    nextButton.textContent = "Next";
+    nextButton.disabled = currentPage === totalPages;
+    nextButton.addEventListener("click", () => {
+      if (currentPage < totalPages) {
+        currentPage++;
+        showProducts();
+        updatePagination();
+      }
+    });
+    uiElements.paginationContainer.appendChild(nextButton);
+  };
+
+  showProducts();
+  updatePagination();
+};
+
+
 
 export {
   renderTabFaqs,
@@ -413,4 +495,5 @@ export {
   renderRewiews,
   renderProducts,
   renderCart,
+  renderPagination,
 };

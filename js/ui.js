@@ -23,7 +23,14 @@ const uiElements = {
     buttonContainer: document.querySelector(".buttonContainer"),
     cartContainer: document.querySelector("#cartContainer"),
     cartContainerRight: document.querySelector(".cartContainerRight"),
-    cartContainerLeft: document.querySelector(".cartContainerLeft")
+    cartContainerLeft: document.querySelector(".cartContainerLeft"),
+    productDetail: document.querySelector("#productDetail"),
+    // pagination
+    productList: document.getElementById("product-list"),
+    paginationContainer: document.getElementById("pagination"),
+  
+
+
   };
   
   export { uiElements };

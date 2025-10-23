@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Category Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -12,48 +12,186 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-</head>
-<body>
-      <!-- banner section -->
-      <div class="banner">
-        <div class="bannerContent">
-          <p class="bannerText">Sign up and get 20% off to your first order.</p>
-          <a href="#" class="bannerLink">Sign up now</a>
-        </div>
-        <i id="closeBanner" class="fa-solid fa-xmark"></i>
+  </head>
+  <body>
+    <!-- banner section -->
+    <div class="banner">
+      <div class="bannerContent">
+        <p class="bannerText">Sign up and get 20% off to your first order.</p>
+        <a href="#" class="bannerLink">Sign up now</a>
       </div>
-      <!-- header -->
-      <div class="header">
-        <a href="./homePage.html" class="headerLogo">SHOP.CO</a>
-        <nav>
-          <ul class="headerUL">
-            <li>Shop</li>
-            <li>On Sale</li>
-            <li>New Arrivals</li>
-            <li>Brands</li>
+      <i id="closeBanner" class="fa-solid fa-xmark"></i>
+    </div>
+    <!-- header -->
+    <div class="header">
+      <a href="./homePage.html" class="headerLogo">SHOP.CO</a>
+      <nav>
+        <ul class="headerUL">
+          <li>Shop</li>
+          <li>On Sale</li>
+          <li>New Arrivals</li>
+          <li>Brands</li>
+        </ul>
+      </nav>
+      <div class="headerSearchContainer">
+        <img
+          class="headerSearchIcon"
+          src="./images/icons/searchIcon.svg"
+          alt=""
+        />
+        <input
+          class="searchInput"
+          type="text"
+          placeholder="search for product.."
+        />
+      </div>
+
+      <div class="headerIcons">
+        <img src="./images/icons/basketIcon.svg" alt="" />
+        <img src="./images/icons/userIcon.svg" alt="" />
+      </div>
+    </div>
+    <main class="container categoryPage">
+      <!-- Sidebar / Filters -->
+      <aside class="sidebar">
+        <h2>Filters</h2>
+
+        <div class="filter-section">
+          <h3>Category</h3>
+          <ul>
+            <li>
+              <label><input type="checkbox" /> T-shirts</label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> Shorts</label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> Shirts</label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> Hoodies</label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> Jeans</label>
+            </li>
           </ul>
-        </nav>
-        <div class="headerSearchContainer">
-          <img
-            class="headerSearchIcon"
-            src="./images/icons/searchIcon.svg"
-            alt=""
-          />
-          <input
-            class="searchInput"
-            type="text"
-            placeholder="search for product.."
-          />
         </div>
-  
-        <div class="headerIcons">
-          <img src="./images/icons/basketIcon.svg" alt="" />
-          <img src="./images/icons/userIcon.svg" alt="" />
+
+        <div class="filter-section">
+          <h3>Price</h3>
+          <input type="range" min="50" max="2000" value="200" />
+          <div class="price-range">
+            <span>$50</span>
+            <span>$2000</span>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3>Colors</h3>
+          <div class="colors">
+            <span class="color green"></span>
+            <span class="color red"></span>
+            <span class="color yellow"></span>
+            <span class="color blue"></span>
+            <span class="color orange"></span>
+            <span class="color pink"></span>
+            <span class="color black"></span>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3>Size</h3>
+          <div class="sizes">
+            <button>XS</button>
+            <button>S</button>
+            <button>M</button>
+            <button class="active">L</button>
+            <button>XL</button>
+            <button>XXL</button>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3>Dress Style</h3>
+          <ul>
+            <li>
+              <label><input type="radio" name="style" checked /> Casual</label>
+            </li>
+            <li>
+              <label><input type="radio" name="style" /> Formal</label>
+            </li>
+            <li>
+              <label><input type="radio" name="style" /> Party</label>
+            </li>
+            <li>
+              <label><input type="radio" name="style" /> Gym</label>
+            </li>
+          </ul>
+        </div>
+
+        <button class="apply-btn">Apply Filter</button>
+      </aside>
+
+      <!-- Products -->
+      <!-- <section class="products">
+      <header class="products-header">
+        <h1>Casual</h1>
+        <span>Showing 1–10 of 100 Products</span>
+      </header>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200" alt="Gradient Graphic T-shirt" />
+          <h3>Gradient Graphic T-shirt</h3>
+          <p class="price">$145</p>
+        </div>
+
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200" alt="Polo with Tipping Details" />
+          <h3>Polo with Tipping Details</h3>
+          <p class="price">$180</p>
+        </div>
+
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200" alt="Black Striped T-shirt" />
+          <h3>Black Striped T-shirt</h3>
+          <p class="price discounted">$120 <span>$150</span></p>
+        </div>
+
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200" alt="Checkered Shirt" />
+          <h3>Checkered Shirt</h3>
+          <p class="price">$180</p>
+        </div>
+
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200" alt="Loose Fit Bermuda Shorts" />
+          <h3>Loose Fit Bermuda Shorts</h3>
+          <p class="price">$80</p>
         </div>
       </div>
 
-       
-    <!-- offers -->
+      <!-- Pagination -->
+      <!-- <div class="pagination">
+        <button>Previous</button>
+        <span class="pages">
+          <button class="active">1</button>
+          <button>2</button>
+          <button>3</button>
+          <span>...</span>
+          <button>10</button>
+        </span>
+        <button>Next</button>
+      </div> -->
+
+      <!-- pagination  product list-->
+      <div class="leftProductContainer">
+        <ul id="product-list"></ul>
+        <div id="pagination"></div>
+      </div>
+    </main>
+
+    <!-- offer banner-->
     <div class="container offersContainer">
       <div class="offerTitle">
         STAY UPTO DATE ABOUT <br />
@@ -68,88 +206,95 @@
       </div>
     </div>
 
-      <!-- footer -->
-      <footer class="footer ">
-        <ul class="container">
-          <li>
-            <div class="footerContent">
-              <h4 class="title">SHOP.CO</h4>
-              <p>
-                We have clothes that suits your style and which you’re proud to
-                wear. From women to men.
-              </p>
-           
+    <!-- footer -->
+    <footer class="footer">
+      <ul class="container">
+        <li>
+          <div class="footerContent">
+            <h4 class="title">SHOP.CO</h4>
+            <p>
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
+            </p>
+
             <div class="sosialIcons">
               <img class="sosialIcon" src="./images/instagram.png" alt="" />
               <img class="sosialIcon" src="./images/Vector (2).png" alt="" />
               <img class="sosialIcon face" src="./images/Group.png" alt="" />
-              <img class="sosialIcon" src="./images/logo-twitter 2.svg" alt="" />
-            </div> </div>
-          </li>
-          <li>
-            <h4>Company</h4>
-            <a href="">About</a>
-  
-            <a href="">Features</a>
-  
-            <a href="">Works</a>
-  
-            <a href="">Career</a>
-          </li>
-          <li>
-            <h4>Help</h4>
-            <a href="">Customer Support</a>
-  
-            <a href="">Delivery Details</a>
-  
-            <a href="">Terms & Conditions</a>
-  
-            <a href="">Privacy Policy</a>
-          </li>
-          <li>
-            <h4>FAQ</h4>
-            <a href=""> Account</a>
-  
-            <a href="">Manage Deliveries</a>
-  
-            <a href="">Orders</a>
-  
-            <a href="">Payments</a>
-          </li>
-          <li>
-            <h4>Resources</h4>
-            <a href="">About</a> <a href="">Free eBooks</a>
-            <a href=""> Development Tutorial</a>
-  
-            <a href="">How to - Blog</a>
-  
-            <a href="">Youtube Playlist</a>
-          </li>
-        </ul><hr class="hr">
-        <div class="collaborateContainer">
-          <p class="collaborateText">This website is developed by trainees at <a href="">Archi’s Academy</a></p>
-          <p class="collaborateTitle">Collaborators</p>
-          <div class="collaboratorsImg">
-            <img src="./images/collabrators/Ellipse 3.svg" alt="">
-            <img src="./images/collabrators/Ellipse 4.svg" alt="">
-            <img src="./images/collabrators/Ellipse 5.svg" alt="">
-            <img src="./images/collabrators/Ellipse 6.svg" alt="">
-            <img src="./images/collabrators/Ellipse 7.svg" alt="">
-  
+              <img
+                class="sosialIcon"
+                src="./images/logo-twitter 2.svg"
+                alt=""
+              />
+            </div>
           </div>
-        </div>   
-      <div class="footerBottom">
-       <p>Shop.co © 2000-2023, All Rights Reserved</p>
-  
-       <div class="footerBottomIcons">
-        <img src="./images/Badge (1).svg" alt="">
-        <img src="./images/Badge (2).svg" alt="">
-        <img src="./images/Badge (3).svg" alt="">
-        <img src="./images/Badge (4).svg" alt="">
-    
-       </div>
+        </li>
+        <li>
+          <h4>Company</h4>
+          <a href="">About</a>
+
+          <a href="">Features</a>
+
+          <a href="">Works</a>
+
+          <a href="">Career</a>
+        </li>
+        <li>
+          <h4>Help</h4>
+          <a href="">Customer Support</a>
+
+          <a href="">Delivery Details</a>
+
+          <a href="">Terms & Conditions</a>
+
+          <a href="">Privacy Policy</a>
+        </li>
+        <li>
+          <h4>FAQ</h4>
+          <a href=""> Account</a>
+
+          <a href="">Manage Deliveries</a>
+
+          <a href="">Orders</a>
+
+          <a href="">Payments</a>
+        </li>
+        <li>
+          <h4>Resources</h4>
+          <a href="">About</a> <a href="">Free eBooks</a>
+          <a href=""> Development Tutorial</a>
+
+          <a href="">How to - Blog</a>
+
+          <a href="">Youtube Playlist</a>
+        </li>
+      </ul>
+      <hr class="hr" />
+      <div class="collaborateContainer">
+        <p class="collaborateText">
+          This website is developed by trainees at
+          <a href="">Archi’s Academy</a>
+        </p>
+        <p class="collaborateTitle">Collaborators</p>
+        <div class="collaboratorsImg">
+          <img src="./images/collabrators/Ellipse 3.svg" alt="" />
+          <img src="./images/collabrators/Ellipse 4.svg" alt="" />
+          <img src="./images/collabrators/Ellipse 5.svg" alt="" />
+          <img src="./images/collabrators/Ellipse 6.svg" alt="" />
+          <img src="./images/collabrators/Ellipse 7.svg" alt="" />
+        </div>
       </div>
-      </footer>  
+      <div class="footerBottom">
+        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+
+        <div class="footerBottomIcons">
+          <img src="./images/Badge (1).svg" alt="" />
+          <img src="./images/Badge (2).svg" alt="" />
+          <img src="./images/Badge (3).svg" alt="" />
+          <img src="./images/Badge (4).svg" alt="" />
+        </div>
+      </div>
+    </footer>
     <script type="module" src="./js/main.js"></script>
-</body>
+  </body>
 </html>

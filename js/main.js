@@ -1,7 +1,7 @@
-import { fetchProducts } from "./fetch.js";
-import { fetchReviews,fetchFaqs } from "./fetch.js";
+
+import { fetchReviews,fetchFaqs , fetchProducts } from "./fetch.js";
 import { uiElements } from "./ui.js";
-import { renderProducts, renderRewiews,renderProductDetail ,renderTabReviews,renderTabFaqs,renderCart   } from "./render.js";
+import { renderProducts, renderRewiews,renderProductDetail ,renderTabReviews,renderTabFaqs,renderCart,renderPagination   } from "./render.js";
 import { slider } from "./slider.js";
 import {  tabClickHandler} from "./helper.js";
 
@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
   } else if (window.location.pathname === "/categoryPage.html") {
+    renderPagination(products);
   
   } else if (window.location.pathname === "/cart.html") {
     renderCart();
