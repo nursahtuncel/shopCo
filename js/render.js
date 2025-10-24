@@ -80,7 +80,9 @@ const renderRewiews = (reviews) => {
 };
 
 const renderProductDetail = (products) => {
+
   const params = new URLSearchParams(window.location.search);
+ 
   const productId = params.get("id");
   const product = products.find((product) => product.id == productId);
   const productHTML = `
@@ -412,20 +414,25 @@ for (let i = 1; i <= 20; i++) {
 }
 
 const renderPagination = (products) => {
-  const productsPerPage = 5;
-  let currentPage = 1;
-  const totalPages = Math.ceil(products.length / productsPerPage);
+
+  const productsPerPage = 9; //her sayfada 9 ürün
+  let currentPage = 1; //ilk sayfa
+  const totalPages = Math.ceil(products.length / productsPerPage); //toplam sayfa sayısını hesapla
+  //kaç tane sayfa varsa o kadar sayfa butonu oluşturucam
+
 
   const showProducts = () => {
+    //elementleri arayüzde gösteren fonksiyonumuz
     uiElements.productList.innerHTML = "";
-    const start = (currentPage - 1) * productsPerPage;
-    const end = start + productsPerPage;
+    //her sayfada 5 ürün varsa 1.sayfada 0. indexten 5. indexe kadar ürünleri getir
+    const start = (currentPage - 1) * productsPerPage; // 0
+    const end = start + productsPerPage; // 9
 
     for (let i = start; i < end && i < products.length; i++) {
       const product = products[i];
       const div = document.createElement("div");
       div.innerHTML = `
-      <div class="card-container-item" data-id="${product.id}">
+      <div class="card-container-item categoryPageItem2" data-id="${product.id}">
         <img src="${product.image}" alt="${product.title}">
         <div class="itemContent">
           <h3>${getShortParagraph(product.title)}</h3>
@@ -441,7 +448,7 @@ const renderPagination = (products) => {
   const updatePagination = () => {
     uiElements.paginationContainer.innerHTML = "";
 
-    // Previous Button
+     // Previous Button
     const prevButton = document.createElement("button");
     prevButton.textContent = "Previous";
     prevButton.disabled = currentPage === 1;
@@ -454,11 +461,12 @@ const renderPagination = (products) => {
     });
     uiElements.paginationContainer.appendChild(prevButton);
 
-    // Page Numbers
+    //sayfa butonlarını oluşturuyorum 
     for (let i = 1; i <= totalPages; i++) {
       const pageButton = document.createElement("button");
       pageButton.textContent = i;
       pageButton.classList.add("pageNumber");
+      //aktif sayfaya göre butonu aktif ediyorum
       if (i === currentPage) pageButton.classList.add("active");
       pageButton.addEventListener("click", () => {
         currentPage = i;
@@ -471,6 +479,7 @@ const renderPagination = (products) => {
     // Next Button
     const nextButton = document.createElement("button");
     nextButton.textContent = "Next";
+    //son sayfadaysam next
     nextButton.disabled = currentPage === totalPages;
     nextButton.addEventListener("click", () => {
       if (currentPage < totalPages) {
@@ -481,6 +490,8 @@ const renderPagination = (products) => {
     });
     uiElements.paginationContainer.appendChild(nextButton);
   };
+  
+   
 
   showProducts();
   updatePagination();

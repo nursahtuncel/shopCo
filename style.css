@@ -237,14 +237,19 @@ hr {
   max-width: 1240px;
   padding-bottom: 50px;
   display: flex;
+  justify-content: space-between;
   margin: auto;
   flex-wrap: wrap;
   gap: 20px;
 }
 .card-container-item {
   cursor: pointer;
+
+}
+.categoryPageItem2 {
+  cursor: pointer;
   min-width: 293px;
-  width: 100%;
+  width: 100%; 
 }
 .card-container-item img {
   width: 200px;
@@ -1371,7 +1376,7 @@ hr {
 }
 
 #pagination button:hover:not(:disabled) {
-  background-color: red;
+  background-color: #cccccc
 }
 
 #pagination button:disabled {
@@ -1392,7 +1397,7 @@ hr {
 }
 
 .pageNumber.active {
-  border: 2px solid #007bff; /* Mavi border ile aktif sayfa */
+ background-color: rebeccapurple;
   border-radius: 4px;
   font-weight: bold;
 }
